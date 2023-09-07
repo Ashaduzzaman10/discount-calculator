@@ -2,7 +2,7 @@ let billAmount = 0;
 const discountCouponCode = "dis30";
 
 function updateTotalBill() {
-  const totalAmountElement = document.getElementById("toal-amount");
+  const totalAmountElement = document.getElementById("total-amount");
   totalAmountElement.textContent = `$ ${billAmount.toFixed(2)}`;
 }
 
