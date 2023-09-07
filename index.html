@@ -14,20 +14,19 @@
     </header>
     <main>
       <!-- bill section  start  -->
-
       <section class="mt-8">
         <div class="grid gap-4 w-3/4 mx-auto">
           <div class="bg-yellow-500 p-8 text-white rounded-lg">
             <div class="bg-violet-400 p-8">
               <h3 class="text-4xl text-white mb-4">Your bill</h3>
               <input
-                id="deposit-field"
+                id="input-bill"
                 type="text"
-                placeholder="$ 00 "
+                placeholder="$00 "
                 class="w-3/4 px-4 py-3 rounded"
               />
               <button
-                id="btn-deposit"
+                id="bill-enter"
                 class="bg-yellow-500 px-5 py-2 font-medium hover:bg-sky-500 rounded-lg mt-4"
               >
                 enter
@@ -44,14 +43,17 @@
           <div class="bg-yellow-500 p-8 text-white rounded-lg">
             <div class="bg-cyan-400 p-8">
               <h3 class="text-4xl text-white mb-4">Discount coupon</h3>
+              <h4 class="text-black-500">
+                use " dis30 " to get 30 percent off
+              </h4>
               <input
-                id="deposit-field"
+                id="coupon-id"
                 type="text"
                 placeholder="$ 00 "
                 class="w-3/4 px-4 py-3 rounded"
               />
               <button
-                id="btn-deposit"
+                id="coupon"
                 class="bg-green-500 text-3px px-5 py-2 font-medium hover:bg-sky-500 rounded-lg mt-4"
               >
                 claim
@@ -63,9 +65,9 @@
 
       <section class="mt-8">
         <div class="grid gap-4 w-3/4 mx-auto">
-          <div class="bg-yellow-500 p-8 text-white rounded-lg">
+          <div class="bg-blue-500 p-8 text-white rounded-lg">
             <h4 class="text-2xl font-medium">Total bill</h4>
-            <h2 class="text-4xl">$ <span id="Deposit-total">00</span></h2>
+            <h2 class="text-4xl"><span id="toal-amount">00</span></h2>
           </div>
         </div>
       </section>
@@ -83,5 +85,6 @@
         </div>
       </section>
     </main>
+    <script src="/js/bill.js"></script>
   </body>
 </html>
